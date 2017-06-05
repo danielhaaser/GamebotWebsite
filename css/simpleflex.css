@@ -273,6 +273,13 @@
   transition: all 0.2s ease-in-out;
 }
 
+.main:hover {
+  -ms-transform: scale(1.03); /* IE 9 */
+  -webkit-transform: scale(1.03); /* Safari */
+  transform: scale(1.03);
+  z-index: 2;
+}
+
 .main h2 {
   font-family: 'Lato', sans-serif;
   font-style: italic;
@@ -284,15 +291,25 @@
   position: absolute;
   text-shadow: 3px 3px 0px #000;
   width: 100%;
-  font-size: 20vw;
+  font-size: 2.2vw;
   margin: 0 0 12px 0;
+  position: absolute;
 }
 
-.main:hover {
-  -ms-transform: scale(1.03); /* IE 9 */
-  -webkit-transform: scale(1.03); /* Safari */
-  transform: scale(1.03);
-  z-index: 2;
+.playwrap {
+  height: 100%;
+
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.main:hover .playwrap {
+
+  opacity: 1;
+}
+
+.playwrap img {
+  width: 40px;
 }
 
 .fleximagegrid img {
