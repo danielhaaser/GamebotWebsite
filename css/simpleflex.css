@@ -270,6 +270,7 @@
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  transition: all 0.2s ease-in-out;
 }
 
 .main h2 {
@@ -285,7 +286,13 @@
   width: 100%;
   font-size: 20vw;
   margin: 0 0 12px 0;
-  /*font-size: 8vw;*/
+}
+
+.main:hover {
+  -ms-transform: scale(1.03); /* IE 9 */
+  -webkit-transform: scale(1.03); /* Safari */
+  transform: scale(1.03);
+  z-index: 2;
 }
 
 .fleximagegrid img {
